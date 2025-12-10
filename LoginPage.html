@@ -1,0 +1,91 @@
+﻿<html>
+<head>
+    <title>OXPd2 Example Login Page</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: left;
+            height: 100%;
+        }
+
+        .splash-text {
+            color: #FFFFFF;
+            margin: auto;
+            font-weight: bold;
+            font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label>PIN:</label>
+        <input type="number" id="pinId" value="1234"/> <br />
+        <button type="button" class="button" id="loginButton" onClick="onLogin();">Login</button>
+        <button type="button" class="button" id="cancelButton" onClick="onCancel();">Cancel</button>
+    </div>
+<script>
+    var urlBase, printJobList
+
+    function getUrlBase() {
+        urlBase = window.location.protocol + "//" + window.location.host + "/oxpd2-examples/api";
+        console.log("urlBase is: " + urlBase);
+    }
+
+    var onLogin = async function () {
+        getUrlBase();
+        var url = urlBase + "/authenticationAgent/login";
+        console.log("url is: " + url);
+        var pinValue = document.getElementById('pinId').value;
+        const data = { pin: pinValue };
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json, text/plain, *',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }).then((response) => {
+            if (response.ok) {
+                console.log("close the window");
+                window.close();
+                return;
+            }
+            return Promise.reject(response);
+        }).catch((response) => {
+            console.log(response.status, response.statusText);
+            response.json().then((json) => {
+                console.log(json);
+            })
+        });
+    }
+    var onCancel = async function () {
+        getUrlBase();
+        var url = urlBase + "/authenticationAgent/cancelLogin";
+        console.log("url is: " + url);
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json, text/plain, *',
+                'Content-Type': 'application/json'
+            },
+            body: {}
+        }).then((response) => {
+            if (response.ok) {
+                console.log("close the window");
+                window.close();
+                return;
+            }
+            return Promise.reject(response);
+        }).catch((response) => {
+            console.log(response.status, response.statusText);
+            response.json().then((json) => {
+                console.log(json);
+            })
+        });
+    }
+
+
+</script>
+</body>
+</html>

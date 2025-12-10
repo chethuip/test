@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+    <title>OXPd2 Example Application</title>
+    <style>
+        @font-face {
+            font-display: swap;
+            font-family: 'HP Simplified';
+            src: url("/WebContent/HPSimplified_Rg.ttf") format("truetype");
+        }
+
+        body {
+            font-family: 'HP Simplified', Arial, sans-serif;
+            font-weight: normal;
+            background-image: url('/WebContent/mountains.jpg');
+            background-size: 135% 135%;
+            background-position: center center;
+            animation: shrink 5s infinite alternate;
+            border: 0px solid #000000;
+        }
+
+        @keyframes shrink {
+            0% {
+                background-size: 135% 135%;
+            }
+
+            100% {
+                background-size: 100% 100%;
+            }
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .splash-text {
+            color: #FFFFFF;
+            margin: auto;
+            font-weight: bold;
+            font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="splash-text">Welcome to OXPd2!</div>
+    </div>
+</body>
+</html>

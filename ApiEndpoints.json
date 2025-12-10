@@ -1,0 +1,3462 @@
+[
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "EnumerateApplicationAccessPoints",
+    "RelativePath": "api/Application/applicationAccessPoints",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.ApplicationAccessPoints",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "GetApplicationAccessPoints",
+    "RelativePath": "api/Application/applicationAccessPoints/{accessPointId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessPointId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.ApplicationAccessPoint",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "ApplicationAccessPointInitiateLaunch",
+    "RelativePath": "api/Application/applicationAccessPoints/{accessPointId}/initiateLaunch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessPointId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.ApplicationAccessPoint_InitiateLaunch",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "EnumerateApplicationAgents",
+    "RelativePath": "api/Application/applicationAgents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.ApplicationAgents",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "GetApplicationAgent",
+    "RelativePath": "api/Application/applicationAgents/{applicationId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "applicationId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.ApplicationAgent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "RefreshApplicationAgent",
+    "RelativePath": "api/Application/applicationAgents/{applicationId}/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "refreshRequest",
+        "Type": "HP.Extensibility.Service.Application.RefreshRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "applicationId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.ApplicationAgent_Refresh",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "GetApplicationRuntime",
+    "RelativePath": "api/Application/applicationRuntime",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.ApplicationRuntime",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "GetCurrentContext",
+    "RelativePath": "api/Application/applicationRuntime/currentContext",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.CurrentContext",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "ExitCurrentContext",
+    "RelativePath": "api/Application/applicationRuntime/currentContext/exit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "exitRequest",
+        "Type": "HP.Extensibility.Service.Application.ExitRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.CurrentContext_Exit",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "ResetInactivityTimerCurrentContext",
+    "RelativePath": "api/Application/applicationRuntime/currentContext/resetInactivityTimer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resetRequest",
+        "Type": "HP.Extensibility.Service.Application.ResetInactivityTimerRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.CurrentContext_ResetInactivityTimer",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "GetRuntimeChrome",
+    "RelativePath": "api/Application/applicationRuntime/currentContext/runtimeChrome",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.RuntimeChrome",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "ReplaceRuntimeChrome",
+    "RelativePath": "api/Application/applicationRuntime/currentContext/runtimeChrome",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "runtimeChromeReplace",
+        "Type": "HP.Extensibility.Service.Application.RuntimeChrome_Replace",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.RuntimeChrome",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "ModifyRuntimeChrome",
+    "RelativePath": "api/Application/applicationRuntime/currentContext/runtimeChrome",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "runtimeChromeModify",
+        "Type": "HP.Extensibility.Service.Application.RuntimeChrome_Modify",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.RuntimeChrome",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "GetStartIntent",
+    "RelativePath": "api/Application/applicationRuntime/currentContext/startIntent",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.StartIntent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "ResetApplicationRuntime",
+    "RelativePath": "api/Application/applicationRuntime/reset",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resetRequest",
+        "Type": "HP.Extensibility.Service.Application.ResetRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.ApplicationRuntime_Reset",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "GetCapabilities",
+    "RelativePath": "api/Application/capabilities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.Capabilities",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "EnumerateI18nAssets",
+    "RelativePath": "api/Application/i18nAssets",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.I18nAssets",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "GetI18nAsset",
+    "RelativePath": "api/Application/i18nAssets/{i18nAssetId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "i18nAssetId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.I18nAsset",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "EnumerateMessageCenterAgents",
+    "RelativePath": "api/Application/messageCenterAgents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.MessageCenterAgents",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "GetMessageCenterAgent",
+    "RelativePath": "api/Application/messageCenterAgents/{agentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.MessageCenterAgent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "EnumerateMessages",
+    "RelativePath": "api/Application/messageCenterAgents/{agentId}/messages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.Messages",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "CreateMessage",
+    "RelativePath": "api/Application/messageCenterAgents/{agentId}/messages",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "messageCreate",
+        "Type": "HP.Extensibility.Service.Application.Message_Create",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.Message",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "GetMessage",
+    "RelativePath": "api/Application/messageCenterAgents/{agentId}/messages/{messageId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "messageId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Application.Message",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationController",
+    "Method": "DeleteMessage",
+    "RelativePath": "api/Application/messageCenterAgents/{agentId}/messages/{messageId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "messageId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Types.Base.DeleteContent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ApplicationAgentController",
+    "Method": "GetApplication",
+    "RelativePath": "api/ApplicationAgent/index.html",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.AuthenticationController",
+    "Method": "EnumerateAuthenticationAccessPoints",
+    "RelativePath": "api/Authentication/authenticationAccessPoints",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Authentication.AuthenticationAccessPoints",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.AuthenticationController",
+    "Method": "GetAuthenticationAccessPoint",
+    "RelativePath": "api/Authentication/authenticationAccessPoints/{authenticationAccessPointid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authenticationAccessPointId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Authentication.AuthenticationAccessPoint",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.AuthenticationController",
+    "Method": "AuthenticationAccessPointInitiateLogin",
+    "RelativePath": "api/Authentication/authenticationAccessPoints/{authenticationAccessPointid}/initiateLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authenticationAccessPointId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Authentication.AuthenticationAccessPoint_InitiateLogin",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.AuthenticationController",
+    "Method": "EnumerateAuthenticationAgents",
+    "RelativePath": "api/Authentication/authenticationAgents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Authentication.AuthenticationAgents",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.AuthenticationController",
+    "Method": "GetAuthenticationAgent",
+    "RelativePath": "api/Authentication/authenticationAgents/{authenticationAgentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authenticationAgentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Authentication.AuthenticationAgent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.AuthenticationController",
+    "Method": "AthenticationAgentLogin",
+    "RelativePath": "api/Authentication/authenticationAgents/{authenticationAgentId}/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authenticationAgentId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "prePrompt",
+        "Type": "HP.Extensibility.Types.Authentication.PrePromptResult",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Authentication.AuthenticationAgent_Login",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.AuthenticationController",
+    "Method": "GetCapabilities",
+    "RelativePath": "api/Authentication/capabilities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Authentication.Capabilities",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.AuthenticationController",
+    "Method": "SessionForceLogout",
+    "RelativePath": "api/Authentication/session/forceLogout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Authentication.Session_ForceLogout",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.AuthenticationAgentController",
+    "Method": "CancelLogin",
+    "RelativePath": "api/AuthenticationAgent/cancelLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.AuthenticationAgentController",
+    "Method": "Login",
+    "RelativePath": "api/AuthenticationAgent/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "OXPd2ExamplesHost.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.AuthenticationAgentController",
+    "Method": "PostPromptResult",
+    "RelativePath": "api/AuthenticationAgent/postPromptResult",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "HP.Extensibility.Types.Authentication.PostPromptResultRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.AuthenticationAgentController",
+    "Method": "PrePromptResult",
+    "RelativePath": "api/AuthenticationAgent/prePromptResult",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "HP.Extensibility.Types.Authentication.PrePromptResultRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.AuthenticationAgentController",
+    "Method": "Prompt",
+    "RelativePath": "api/AuthenticationAgent/prompt",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.AuthenticationAgentController",
+    "Method": "SignoutNotification",
+    "RelativePath": "api/AuthenticationAgent/signoutNotification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "HP.Extensibility.Types.Authentication.SignoutNotificationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.CopyController",
+    "Method": "GetCapabilities",
+    "RelativePath": "api/Copy/capabilities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Copy.Capabilities",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.CopyController",
+    "Method": "EnumerateCopyAgents",
+    "RelativePath": "api/Copy/copyAgents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Copy.CopyAgents",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.CopyController",
+    "Method": "GetCopyAgent",
+    "RelativePath": "api/Copy/copyAgents/{agentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Copy.CopyAgent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.CopyController",
+    "Method": "EnumerateCopyJobs",
+    "RelativePath": "api/Copy/copyAgents/{agentId}/copyJobs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Copy.CopyJobs",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.CopyController",
+    "Method": "CreateCopyJob",
+    "RelativePath": "api/Copy/copyAgents/{agentId}/copyJobs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "copyJob_Create",
+        "Type": "HP.Extensibility.Service.Copy.CopyJob_Create",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Copy.CopyJob",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.CopyController",
+    "Method": "GetCopyJob",
+    "RelativePath": "api/Copy/copyAgents/{agentId}/copyJobs/{copyJobId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "copyJobId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Copy.CopyJob",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.CopyController",
+    "Method": "CancelCopyJob",
+    "RelativePath": "api/Copy/copyAgents/{agentId}/copyJobs/{copyJobId}/cancel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "copyJobId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Copy.CopyJob_Cancel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.CopyController",
+    "Method": "VerifyCopyTicket",
+    "RelativePath": "api/Copy/copyTicketHelper",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "copyOptions",
+        "Type": "HP.Extensibility.Service.Copy.CopyOptions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[HP.Extensibility.Types.OptionProfile.OptionRuleNotification, OXPd2Lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.CopyController",
+    "Method": "GetDefaultOptions",
+    "RelativePath": "api/Copy/defaultOptions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Copy.DefaultOptions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.CopyController",
+    "Method": "GetProfile",
+    "RelativePath": "api/Copy/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Copy.Profile",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.CopyAgentController",
+    "Method": "CopyJobNotification",
+    "RelativePath": "api/CopyAgent/copyJobNotification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payload",
+        "Type": "HP.Extensibility.Types.Target.HttpPayloadWrapper",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceController",
+    "Method": "GetCapabilities",
+    "RelativePath": "api/Device/capabilities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Device.Capabilities",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceController",
+    "Method": "GetDeploymentInformation",
+    "RelativePath": "api/Device/deploymentInformation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Device.DeploymentInformation",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceController",
+    "Method": "GetEmail",
+    "RelativePath": "api/Device/email",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Device.Email",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceController",
+    "Method": "GetIdentity",
+    "RelativePath": "api/Device/identity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Device.Identity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceController",
+    "Method": "GetScanner",
+    "RelativePath": "api/Device/scanner",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Device.Scanner",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceController",
+    "Method": "GetStatus",
+    "RelativePath": "api/Device/status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Device.Status",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceManagementController",
+    "Method": "BindDevice",
+    "RelativePath": "api/DeviceManagement/bindDevice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "OXPd2ExamplesHost.Models.BindDeviceRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OXPd2ExamplesHost.Models.DeviceModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceManagementController",
+    "Method": "Device",
+    "RelativePath": "api/DeviceManagement/device",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OXPd2ExamplesHost.Models.DeviceModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceManagementController",
+    "Method": "DeviceInfo",
+    "RelativePath": "api/DeviceManagement/device/deviceInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceManagementController",
+    "Method": "PasswordGrant",
+    "RelativePath": "api/DeviceManagement/device/passwordGrant",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "HP.Extensibility.Client.OAUTH2.PasswordGrantRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Client.OAUTH2.Token",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceManagementController",
+    "Method": "ServicesDiscovery",
+    "RelativePath": "api/DeviceManagement/device/servicesDiscovery",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceManagementController",
+    "Method": "Tokens",
+    "RelativePath": "api/DeviceManagement/device/tokens",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[OXPd2ExamplesHost.Models.AccessTokenInfo, OXPd2ExamplesHost, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceManagementController",
+    "Method": "UnbindDevice",
+    "RelativePath": "api/DeviceManagement/unbindDevice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OXPd2ExamplesHost.Models.DeviceModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceUsageController",
+    "Method": "GetCapabilities",
+    "RelativePath": "api/DeviceUsage/capabilities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.DeviceUsage.Capabilities",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceUsageController",
+    "Method": "EnumerateDeviceUsageAgents",
+    "RelativePath": "api/DeviceUsage/deviceUsageAgents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.DeviceUsage.DeviceUsageAgents",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceUsageController",
+    "Method": "GetDeviceUsageAgent",
+    "RelativePath": "api/DeviceUsage/deviceUsageAgents/{agentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.DeviceUsage.DeviceUsageAgent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.DeviceUsageController",
+    "Method": "GetLifetimeCounters",
+    "RelativePath": "api/DeviceUsage/deviceUsageAgents/{agentId}/lifetimeCounters",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.DeviceUsage.LifetimeCounters",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.JobStatisticsController",
+    "Method": "GetCapabilities",
+    "RelativePath": "api/JobStatistics/capabilities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.JobStatistics.Capabilities",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.JobStatisticsController",
+    "Method": "EnumerateJobStatisticsAgents",
+    "RelativePath": "api/JobStatistics/jobStatisticsAgents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.JobStatistics.JobStatisticsAgents",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.JobStatisticsController",
+    "Method": "GetJobStatisticsAgent",
+    "RelativePath": "api/JobStatistics/jobStatisticsAgents/{agentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.JobStatistics.JobStatisticsAgent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.JobStatisticsController",
+    "Method": "EnumerateJobs",
+    "RelativePath": "api/JobStatistics/jobStatisticsAgents/{agentId}/jobs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.JobStatistics.Jobs",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.JobStatisticsController",
+    "Method": "ModifyJobs",
+    "RelativePath": "api/JobStatistics/jobStatisticsAgents/{agentId}/jobs",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "jobs_Modify",
+        "Type": "HP.Extensibility.Service.JobStatistics.Jobs_Modify",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.JobStatistics.Jobs",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.JobStatisticsController",
+    "Method": "GetJob",
+    "RelativePath": "api/JobStatistics/jobStatisticsAgents/{agentId}/jobs/{sequenceNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "sequenceNumber",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.JobStatistics.Job",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.JobStatisticsAgentController",
+    "Method": "JobStatisticsNotification",
+    "RelativePath": "api/JobStatisticsAgent/jobStatistics",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notification",
+        "Type": "HP.Extensibility.Service.JobStatistics.StatisticsCallbackPayload",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.JobStatistics.StatisticsCallbackResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.LogController",
+    "Method": "GetLog",
+    "RelativePath": "api/Log/{logName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.LogController",
+    "Method": "DeleteLog",
+    "RelativePath": "api/Log/{logName}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.PrintJobController",
+    "Method": "GetCapabilities",
+    "RelativePath": "api/PrintJob/capabilities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.PrintJob.Capabilities",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.PrintJobController",
+    "Method": "EnumeratePrintJobAgents",
+    "RelativePath": "api/PrintJob/printJobAgents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.PrintJob.PrintJobAgents",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.PrintJobController",
+    "Method": "GetPrintJobAgent",
+    "RelativePath": "api/PrintJob/printJobAgents/{agentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.PrintJob.PrintJobAgent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ScanJobController",
+    "Method": "GetCapabilities",
+    "RelativePath": "api/ScanJob/capabilities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.ScanJob.Capabilities",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ScanJobController",
+    "Method": "GetDefaultOptions",
+    "RelativePath": "api/ScanJob/defaultOptions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.ScanJob.DefaultOptions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ScanJobController",
+    "Method": "GetProfile",
+    "RelativePath": "api/ScanJob/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.ScanJob.Profile",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ScanJobController",
+    "Method": "EnumerateScanJobAgents",
+    "RelativePath": "api/ScanJob/scanJobAgents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.ScanJob.ScanJobAgents",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ScanJobController",
+    "Method": "GetScanJobAgent",
+    "RelativePath": "api/ScanJob/scanJobAgents/{agentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.ScanJob.ScanJobAgent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ScanJobController",
+    "Method": "EnumerateScanJobs",
+    "RelativePath": "api/ScanJob/scanJobAgents/{agentId}/scanJobs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.ScanJob.ScanJobs",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ScanJobController",
+    "Method": "CreateScanJob",
+    "RelativePath": "api/ScanJob/scanJobAgents/{agentId}/scanJobs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "scanJob_Create",
+        "Type": "HP.Extensibility.Service.ScanJob.ScanJob_Create",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.ScanJob.ScanJob",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ScanJobController",
+    "Method": "GetScanJob",
+    "RelativePath": "api/ScanJob/scanJobAgents/{agentId}/scanJobs/{scanJobId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "scanJobId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.ScanJob.ScanJob",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ScanJobController",
+    "Method": "CancelScanJob",
+    "RelativePath": "api/ScanJob/scanJobAgents/{agentId}/scanJobs/{scanJobId}/cancel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "scanJobId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.ScanJob.ScanJob_Cancel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ScanJobController",
+    "Method": "VerifyScanTicket",
+    "RelativePath": "api/ScanJob/scanTicketHelper",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "scanOptions",
+        "Type": "HP.Extensibility.Service.ScanJob.ScanOptions",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[HP.Extensibility.Types.OptionProfile.OptionRuleNotification, OXPd2Lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ScanJobAgentController",
+    "Method": "ScanJobNotification",
+    "RelativePath": "api/ScanJobAgent/scanJobNotification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payload",
+        "Type": "HP.Extensibility.Types.Target.HttpPayloadWrapper",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.ScanJobAgentController",
+    "Method": "ScanJobReceiver",
+    "RelativePath": "api/ScanJobAgent/scanJobReceiver",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SecurityController",
+    "Method": "GetCapabilities",
+    "RelativePath": "api/Security/capabilities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Security.Capabilities",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SecurityController",
+    "Method": "EnumerateSecurityAgents",
+    "RelativePath": "api/Security/securityAgents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Security.SecurityAgents",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SecurityController",
+    "Method": "GetSecurityAgent",
+    "RelativePath": "api/Security/securityAgents/{agentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Security.SecurityAgent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SecurityController",
+    "Method": "ResolveSecurityExpression",
+    "RelativePath": "api/Security/securityAgents/{agentId}/resolveSecurityExpression",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "HP.Extensibility.Service.Security.ResolveSecurityExpressionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Security.SecurityAgent_ResolveSecurityExpression",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionDiagnosticsController",
+    "Method": "GetCapabilities",
+    "RelativePath": "api/SolutionDiagnostics/capabilities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionDiagnostics.Capabilities",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionDiagnosticsController",
+    "Method": "EnumerateSolutionDiagnosticsAgents",
+    "RelativePath": "api/SolutionDiagnostics/solutionDiagnosticsAgents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionDiagnostics.SolutionDiagnosticsAgents",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionDiagnosticsController",
+    "Method": "GetSolutionDiagnosticsAgent",
+    "RelativePath": "api/SolutionDiagnostics/solutionDiagnosticsAgents/{agentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionDiagnostics.SolutionDiagnosticsAgent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionDiagnosticsController",
+    "Method": "GetAgentLog",
+    "RelativePath": "api/SolutionDiagnostics/solutionDiagnosticsAgents/{agentId}/log",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Tuple\u00602[[HP.Extensibility.Service.SolutionDiagnostics.Log, OXPd2Lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Byte[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "GetCapabilities",
+    "RelativePath": "api/SolutionManager/capabilities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.Capabilities",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "GetInstaller",
+    "RelativePath": "api/SolutionManager/installer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.Installer",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "EnumerateInstallerOperations",
+    "RelativePath": "api/SolutionManager/installer/installerOperations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.InstallerOperations",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "GetInstallerOperation",
+    "RelativePath": "api/SolutionManager/installer/installerOperations/{operationId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "operationId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.InstallerOperation",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "InstallRemote",
+    "RelativePath": "api/SolutionManager/installer/installRemote",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.Installer_InstallRemote",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "InstallSolution",
+    "RelativePath": "api/SolutionManager/installer/installSolution",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.Installer_InstallSolution",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "UninstallSolution",
+    "RelativePath": "api/SolutionManager/installer/uninstallSolution",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uninstallSolutionRequest",
+        "Type": "HP.Extensibility.Service.SolutionManager.UninstallSolutionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.Installer_UninstallSolution",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "EnumerateSolutions",
+    "RelativePath": "api/SolutionManager/solutions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.Solutions",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "GetSolution",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.Solution",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "EnumerateCertificateAuthorities",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/certificateAuthorities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.CertificateAuthorities",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "GetCertificateAuthority",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/certificateAuthorities/{certificateId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "certificateId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.CertificateAuthority",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "DeleteCertificateAuthority",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/certificateAuthorities/{certificateId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "certificateId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Types.Base.DeleteContent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "ExportCertificateAuthority",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/certificateAuthorities/{certificateId}/export",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "certificateId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Tuple\u00602[[HP.Extensibility.Service.SolutionManager.CertificateAuthority_Export, OXPd2Lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Byte[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "ExportCertificateAuthorities",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/certificateAuthorities/export",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Tuple\u00602[[HP.Extensibility.Service.SolutionManager.CertificateAuthorities_Export, OXPd2Lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Byte[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "ImportCertificateAuthority",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/certificateAuthorities/import",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.CertificateAuthorities_Import",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "GetConfiguration",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/configuration",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.Configuration",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "ModifyConfiguration",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/configuration",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "configurationModify",
+        "Type": "HP.Extensibility.Service.SolutionManager.Configuration_Modify",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.Configuration",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "GetConfigurationData",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/configuration/data",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Tuple\u00602[[HP.Extensibility.Service.SolutionManager.Data, OXPd2Lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Byte[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "ReplaceConfigurationData",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/configuration/data",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.Data",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "GetSolutionContext",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/context",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.Context",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "ModifySolutionContext",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/context",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "contextModify",
+        "Type": "HP.Extensibility.Service.SolutionManager.Context_Modify",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.Context",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "ReplaceSolutionContext",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/context",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "contextReplace",
+        "Type": "HP.Extensibility.Service.SolutionManager.Context_Replace",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.Context",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "PostReissueInstallCode",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/reissueInstallCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.Solution_ReissueInstallCode",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "EnumerateRuntimeRegistrations",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/runtimeRegistrations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.RuntimeRegistrations",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "CreateRuntimeRegistration",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/runtimeRegistrations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "runtimeRegistrationCreate",
+        "Type": "HP.Extensibility.Service.SolutionManager.RuntimeRegistration_Create",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.RuntimeRegistration",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "GetRuntimeRegistration",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/runtimeRegistrations/{recordId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "recordId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.SolutionManager.RuntimeRegistration",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionManagerController",
+    "Method": "DeleteRuntimeRegistration",
+    "RelativePath": "api/SolutionManager/solutions/{solutionId}/runtimeRegistrations/{recordId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solutionId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "recordId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Types.Base.DeleteContent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SolutionNotificationsController",
+    "Method": "SolutionNotification",
+    "RelativePath": "api/SolutionNotifications",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payload",
+        "Type": "HP.Extensibility.Types.Target.HttpPayloadWrapper",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SuppliesController",
+    "Method": "GetCapabilities",
+    "RelativePath": "api/Supplies/capabilities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Supplies.Capabilities",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SuppliesController",
+    "Method": "EnumerateSuppliesAgents",
+    "RelativePath": "api/Supplies/suppliesAgents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Supplies.SuppliesAgents",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SuppliesController",
+    "Method": "GetSuppliesAgent",
+    "RelativePath": "api/Supplies/suppliesAgents/{agentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Supplies.SuppliesAgent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SuppliesController",
+    "Method": "GetSuppliesConfiguration",
+    "RelativePath": "api/Supplies/suppliesAgents/{agentId}/suppliesConfiguration",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Supplies.SuppliesConfiguration",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SuppliesController",
+    "Method": "GetSuppliesInfo",
+    "RelativePath": "api/Supplies/suppliesAgents/{agentId}/suppliesInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Supplies.SuppliesInfo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.SuppliesController",
+    "Method": "GetSuppliesUsage",
+    "RelativePath": "api/Supplies/suppliesAgents/{agentId}/suppliesUsage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.Supplies.SuppliesUsage",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.UsbAccessoriesController",
+    "Method": "EnumerateUsbAccessories",
+    "RelativePath": "api/UsbAccessories/accessories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.UsbAccessories.Accessories",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.UsbAccessoriesController",
+    "Method": "GetUsbAccessory",
+    "RelativePath": "api/UsbAccessories/accessories/{accessoryId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessoryId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.UsbAccessories.Accessory",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.UsbAccessoriesController",
+    "Method": "GetUsbAccessoryHid",
+    "RelativePath": "api/UsbAccessories/accessories/{accessoryId}/hid",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessoryId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.UsbAccessories.Hid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.UsbAccessoriesController",
+    "Method": "GetOpenAccessoryHid",
+    "RelativePath": "api/UsbAccessories/accessories/{accessoryID}/hid/{openHIDAccessoryID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessoryID",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "openHIDAccessoryID",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.UsbAccessories.OpenHIDAccessory",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.UsbAccessoriesController",
+    "Method": "DeleteOpenAccessoryHid",
+    "RelativePath": "api/UsbAccessories/accessories/{accessoryID}/hid/{openHIDAccessoryID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessoryID",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "openHIDAccessoryID",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.UsbAccessoriesController",
+    "Method": "ModifyOpenAccessoryHid",
+    "RelativePath": "api/UsbAccessories/accessories/{accessoryID}/hid/{openHIDAccessoryID}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessoryID",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "openHIDAccessoryID",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "modifyRequest",
+        "Type": "HP.Extensibility.Service.UsbAccessories.OpenHIDAccessory_Modify",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.UsbAccessories.OpenHIDAccessory",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.UsbAccessoriesController",
+    "Method": "ReadReportOpenAccessoryHid",
+    "RelativePath": "api/UsbAccessories/accessories/{accessoryID}/hid/{openHIDAccessoryID}/readReport",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessoryID",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "openHIDAccessoryID",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "readReportParams",
+        "Type": "HP.Extensibility.Service.UsbAccessories.Accessories_Accessory_Hid_OpenHIDAccessory_ReadReport_Params",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.UsbAccessories.OpenHIDAccessory_ReadReport",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.UsbAccessoriesController",
+    "Method": "WriteReportOpenAccessoryHid",
+    "RelativePath": "api/UsbAccessories/accessories/{accessoryID}/hid/{openHIDAccessoryID}/writeReport",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessoryID",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "openHIDAccessoryID",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "writeReportParams",
+        "Type": "HP.Extensibility.Service.UsbAccessories.Accessories_Accessory_Hid_OpenHIDAccessory_WriteReport_Params",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.UsbAccessories.OpenHIDAccessory_WriteReport",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.UsbAccessoriesController",
+    "Method": "OpenAccessoryHid",
+    "RelativePath": "api/UsbAccessories/accessories/{accessoryId}/hid/open",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessoryId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "hidOpenParams",
+        "Type": "HP.Extensibility.Service.UsbAccessories.Accessories_Accessory_Hid_Open_Params",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.UsbAccessories.Hid_Open",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.UsbAccessoriesController",
+    "Method": "GetCapabilities",
+    "RelativePath": "api/UsbAccessories/capabilities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.UsbAccessories.Capabilities",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.UsbAccessoriesController",
+    "Method": "EnumerateUsbAccessoriesAgents",
+    "RelativePath": "api/UsbAccessories/usbAccessoriesAgents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.UsbAccessories.UsbAccessoriesAgents",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.UsbAccessoriesController",
+    "Method": "GetUsbAccessoriesAgent",
+    "RelativePath": "api/UsbAccessories/usbAccessoriesAgents/{agentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HP.Extensibility.Service.UsbAccessories.UsbAccessoriesAgent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.UsbAccessoriesAgentController",
+    "Method": "AsyncIOTarget",
+    "RelativePath": "api/UsbAccessoriesAgent/asyncio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payload",
+        "Type": "HP.Extensibility.Types.Target.HttpPayloadWrapper",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OXPd2ExamplesHost.Controllers.UsbAccessoriesAgentController",
+    "Method": "RegistrationTarget",
+    "RelativePath": "api/UsbAccessoriesAgent/registration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payload",
+        "Type": "HP.Extensibility.Types.Target.HttpPayloadWrapper",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

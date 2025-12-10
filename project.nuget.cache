@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "yEGeeZMzt2I=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\chethan.p\\OneDrive - ascendion\\Desktop\\OXPd2-SDK-Beta-9-20250923.1\\examples\\dotnet\\OXPd2ExamplesHost\\OXPd2ExamplesHost.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chethan.p\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.0\\microsoft.aspnetcore.jsonpatch.6.0.0.nupkg.sha512",
+    "C:\\Users\\chethan.p\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.0.nupkg.sha512",
+    "C:\\Users\\chethan.p\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\chethan.p\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\chethan.p\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
